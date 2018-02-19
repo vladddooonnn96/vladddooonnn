@@ -10,14 +10,17 @@ import java.util.Scanner;
 public class Task3 {
     public static void main(String args[]) {
         Scanner l = new Scanner(System.in);
-        System.out.print("Введите число: ");
-        int i = l.nextInt();
-        System.out.print("Число " + i + " ");
-        if (i % 2 == 0) {
-            System.out.println("четное");
+        System.out.print("Введите целое число: ");
+        if (l.hasNextInt()) {
+            int i = l.nextInt();
+            System.out.print("Число " + i + " ");
+            if (i % 2 == 0) {
+                System.out.println("четное");
+            } else {
+                System.out.println("нечетное");
+            }
         } else {
-            System.out.println("нечетное");
+            System.out.println("Вы ввели не целое число");
         }
     }
 }
-
