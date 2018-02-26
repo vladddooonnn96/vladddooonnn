@@ -1,4 +1,4 @@
-package com.company.lesson8;
+package com.company.lesson8.professions;
 
 public class Driver {
     private String fullName;

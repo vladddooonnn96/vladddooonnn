@@ -1,4 +1,7 @@
-package com.company.lesson8;
+package com.company.lesson8.vehicles;
+
+import com.company.lesson8.professions.Driver;
+import com.company.lesson8.details.Engine;
 
 public class Car {
     private String model;
@@ -11,7 +14,21 @@ public class Car {
         this.model = model;
         this.carClass = carClass;
         this.weight = weight;
+    }
+
+    public Driver getDriver() {
+        return driver;
+    }
+
+    public void setDriver(Driver driver) {
         this.driver = driver;
+    }
+
+    public Engine getEngine() {
+        return engine;
+    }
+
+    public void setEngine(Engine engine) {
         this.engine = engine;
     }
 
@@ -39,21 +56,6 @@ public class Car {
         this.weight = weight;
     }
 
-    public Driver getDriver() {
-        return driver;
-    }
-
-    public void setDriver(Driver driver) {
-        this.driver = driver;
-    }
-
-    public Engine getEngine() {
-        return engine;
-    }
-
-    public void setEngine(Engine engine) {
-        this.engine = engine;
-    }
 
     public void start() {
         System.out.println("Start!");

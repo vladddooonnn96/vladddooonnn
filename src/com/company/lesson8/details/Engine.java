@@ -1,4 +1,4 @@
-package com.company.lesson8;
+package com.company.lesson8.details;
 
 public class Engine {
     double power;

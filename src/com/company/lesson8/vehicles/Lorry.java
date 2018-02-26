@@ -1,4 +1,8 @@
-package com.company.lesson8;
+package com.company.lesson8.vehicles;
+
+import com.company.lesson8.professions.Driver;
+import com.company.lesson8.details.Engine;
+import com.company.lesson8.vehicles.Car;
 
 public class Lorry extends Car {
     private int carrying;
