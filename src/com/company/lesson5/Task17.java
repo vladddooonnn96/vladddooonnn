@@ -1,6 +1,6 @@
 package com.company.lesson5;
 
-import java.util.Arrays;
+        import java.util.Arrays;
 
 public class Task17 {
     public static void main(String[] args) {
@@ -12,7 +12,7 @@ public class Task17 {
                 {27, 7, 6, 8, 5, 9, 11, 7}
         };
         for (int[] arr : array) {
-            BubbleSorter.sort(arr);
+            Task16.sort(arr);
             System.out.println(Arrays.toString(arr));
         }
         int[][] array2 = {
@@ -22,10 +22,11 @@ public class Task17 {
                 {0, 0},
                 {0, 0}
         };
-        for (int[] arr2 : array2) {
-            System.arraycopy(array, 0, array2, 0, 1);
-            System.out.println(Arrays.toString(arr2));
+        int k=0;
+        for (int[] arr2 : array) {
+            System.arraycopy(arr2, 0, array2[k++], 0, 1);
+            //  System.out.println(Arrays.toString(arr2));
         }
-
+        System.out.println(Arrays.deepToString(array2));
     }
 }
