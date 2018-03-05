@@ -45,4 +45,11 @@ public class Flower {
     public static void setCount(int count) {
         Flower.count = count;
     }
+    public static double cost(Flower... flowers){
+        double result = 0;
+        for(Flower f : flowers){
+         result+=f.getCost();
+        }
+        return result;
+    }
 }
